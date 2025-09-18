@@ -10,40 +10,44 @@ Autonomous line-following robot built with **STM32F103**.
 ---
 
 ## Project Structure
-```text
 .
 ├─ docs/           # Reports & documentation (Final_Report.pdf)
 ├─ include/        # Header files (.h)
 ├─ src/            # Source files (.c)
 ├─ .gitignore      # Git ignore rules
 └─ platformio.ini  # PlatformIO project configuration
-Requirements
-PlatformIO (in VS Code or standalone)
 
-STM32F103 board (your config currently uses disco_f100rb in platformio.ini)
+---
 
-ST-LINK debugger/programmer
+## Requirements
+- PlatformIO (in VS Code or standalone)  
+- STM32F103 board (your config currently uses `disco_f100rb` in `platformio.ini`)  
+- ST-LINK debugger/programmer  
 
-Quick Start (Build & Upload)
+---
+
+## Quick Start (Build & Upload)
 Clone the repo:
-
-bash
-Copy code
 git clone https://github.com/yuvalMARMOR/stm32-autonomous-line-follower.git
 cd stm32-autonomous-line-follower
-Open the folder with VS Code + PlatformIO, connect the board via ST-LINK, then:
 
-bash
-Copy code
+Open the folder with **VS Code + PlatformIO**, connect the board via **ST-LINK**, then:
 pio run --target upload
-If compile/upload fails, verify the board in platformio.ini matches your exact MCU/kit.
 
-Language & Framework
-Project is written in Embedded C for STM32 using the Standard Peripheral Library (SPL).
+💡 If compile/upload fails, verify the `board` in `platformio.ini` matches your exact MCU/kit.
 
-Documentation
+---
+
+## Language & Framework
+This project is written in **Embedded C** for STM32, using the **Standard Peripheral Library (SPL)**.
+
+---
+
+## Documentation
 Full project report: docs/Final_Report.pdf
 
-Authors
-- Yuval Marmur
+---
+
+## Authors
+- Yuval Marmur  
 - Adi Ron
