@@ -1,10 +1,9 @@
 /* Includes ------------------------------------------------------------------*/
-#include "Helper_Scripts/motor.h"
-#include "Helper_Scripts/Sensors.h"
-#include "stm32f10x_tim.h"
-#include "Helper_Scripts/extra_built_in_functions.h"
-#include "Helper_Scripts/stm32f10x_it.h"
-#include "stm32f10x.h"
+#include "Motor.h"
+#include "Sensors.h"
+#include "extra_built_in_functions.h"
+#include "stm32f10x_it.h"
+
 
 /* Global typedef -----------------------------------------------------------*/
 TIM_TimeBaseInitTypeDef time2, time7;
