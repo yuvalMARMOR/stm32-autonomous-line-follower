@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "Final Project 2025",
+			"path": "../../../Downloads/Final Project 2025"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stm32f10x_it.h": "c",
+			"stm32f10x_tim.h": "c",
+			"stm32f10x.h": "c",
+			"extra_built_in_functions.h": "c",
+			"sensors.h": "c"
+		}
+	}
+}
