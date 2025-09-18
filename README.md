@@ -1,58 +1,49 @@
 # STM32 Autonomous Line Follower 🚗
 
-An autonomous line-following robot built with **STM32F103**.  
-Features:
+Autonomous line-following robot built with **STM32F103**.
+
+## Features
 - PID control for precise line following  
 - Obstacle detection  
-- Autonomous parking  
+- Autonomous parking
 
 ---
 
-## 📂 Project Structure
-
-
+## Project Structure
+```text
 .
-├── docs/ # Reports and documentation (Final_Report.pdf)
-├── include/ # Header files (.h)
-├── src/ # Source files (.c)
-├── .gitignore # Git ignore rules
-├── platformio.ini # PlatformIO project configuration
+├─ docs/           # Reports & documentation (Final_Report.pdf)
+├─ include/        # Header files (.h)
+├─ src/            # Source files (.c)
+├─ .gitignore      # Git ignore rules
+└─ platformio.ini  # PlatformIO project configuration
+Requirements
+PlatformIO (in VS Code or standalone)
 
+STM32F103 board (your config currently uses disco_f100rb in platformio.ini)
 
----
+ST-LINK debugger/programmer
 
-## ⚙️ Requirements
-- **PlatformIO** (installed on VS Code or standalone)  
-- **STM32F103 board** (tested on STM32F103RB)  
-- **ST-LINK** debugger/programmer  
+Quick Start (Build & Upload)
+Clone the repo:
 
----
+bash
+Copy code
+git clone https://github.com/yuvalMARMOR/stm32-autonomous-line-follower.git
+cd stm32-autonomous-line-follower
+Open the folder with VS Code + PlatformIO, connect the board via ST-LINK, then:
 
-## 🚀 How to Build & Upload
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yuvalMARMOR/stm32-autonomous-line-follower.git
-
-
-Open the folder with VS Code + PlatformIO.
-
-Connect your STM32 board via ST-LINK.
-
-Build & upload the firmware:
-
+bash
+Copy code
 pio run --target upload
+If compile/upload fails, verify the board in platformio.ini matches your exact MCU/kit.
 
-🛠️ Language & Framework
+Language & Framework
+Project is written in Embedded C for STM32 using the Standard Peripheral Library (SPL).
 
-This project is written in Embedded C for STM32,
-using the Standard Peripheral Library (SPL).
+Documentation
+Full project report: docs/Final_Report.pdf
 
-📄 Documentation
-
-Full project report:
-👉 docs/Final_Report.pdf
-
-👥 Authors
-
-Yuval Marmur
-Adi Ron
+Authors
+- Yuval Marmur
+- Adi Ron
